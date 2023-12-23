@@ -1,0 +1,95 @@
+:root {
+  --turquoise: rgb(16, 169, 161);
+  --dark-turquoise: rgb(7, 136, 129);
+  --foam: rgb(211, 248, 247);
+  --dark: rgb(39, 39, 39);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  direction: rtl;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: var(--foam);
+  letter-spacing: 0.2rem;
+  color: var(--dark);
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 3.5rem;
+}
+
+/* Header */
+header {
+  width: 100%;
+  height: 22rem;
+  display: flex;
+  flex-direction: row;
+  border: none;
+  background-color: var(--dark-turquoise);
+  background-image: url(../surveillance-pictures/cover.jpg);
+  background-position: center;
+}
+
+header img {
+  border-radius: 14%;
+  width: 3.7%;
+  height: 70%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark);
+}
+
+/* Footer */
+.footer {
+  position: absolute;
+  width: 100%;
+  height: 3.5rem;
+  bottom: 0;
+  padding: 1.2rem 0.8rem 0.8rem 0.8rem;
+  background-color: var(--dark);
+  color: whitesmoke;
+  text-align: center;
+}
+
+/* media rules */
+@media screen and (max-width: 749px) {
+  header {
+    height: 15rem;
+  }
+}
+
+@media screen and (max-width: 519px) {
+  header {
+    height: 8rem;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .footer {
+    height: 2.7rem;
+    padding: 1rem 0;
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 263px) {
+  header {
+    height: 1.5rem;
+  }
+
+  .footer {
+    font-size: 0.6rem;
+  }
+}

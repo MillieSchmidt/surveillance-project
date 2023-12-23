@@ -1,0 +1,92 @@
+/* Posts */
+.posts-container {
+  border: 0px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.posts-list-post {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  height: 9rem;
+  padding-right: 1rem;
+  padding-left: 2rem;
+  padding-bottom: 0;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  border: 0px solid yellow;
+  background-color: var(--dark-turquoise);
+  color: var(--foam);
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.33) 5px 5px 9px;
+}
+
+.posts-post-title {
+  border: 0px solid yellow;
+  display: inline-block;
+  margin: 0;
+  padding: 0.7rem 0;
+  text-decoration: underline;
+  font-weight: bold;
+  color: var(--foam);
+}
+
+.posts-list-post span {
+  width: 70%;
+  border: 0px solid salmon;
+}
+
+@media screen and (max-width: 1149px) {
+  .posts-list-post {
+    padding: 1rem;
+  }
+
+  .posts-post-title {
+    padding: 0 0 0.9rem 0;
+  }
+
+  .posts-list-post span {
+    width: 85%;
+    border: 0px solid salmon;
+  }
+}
+
+@media screen and (max-width: 933px) {
+  .posts-list-post span {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 787px) {
+  .posts-post-title {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 596px) {
+  .posts-list-post {
+    width: 98%;
+    margin: 0.3rem 0;
+    border: 0px solid yellow;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .posts-list-post {
+    padding: 0.3rem;
+    font-size: 0.8rem;
+  }
+
+  .posts-post-title {
+    padding: 0;
+    border: 0px solid yellow;
+  }
+
+  .posts-list-post span {
+    border: 0px solid red;
+  }
+}
